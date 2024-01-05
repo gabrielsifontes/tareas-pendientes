@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  padding: 0 !important;
+  
+  .header {
+    background-color: #1da3e2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    border-bottom: 1px solid rgb(0, 50, 110);
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.7);
+    
+    h1 {
+      text-shadow: 0px 0px 4px rgba(0,0,0,0.7);
+      color: white;
+    }
+  }
+  
+  .todo {
+    margin: 40px 0 0 0;
+    width: max;
+    
+    &__title {
+      background-color: white;
+      height: 60px;
+      border: 1px solid #dadada;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      h2 {
+        color: #008dd0;
+        letter-spacing: 7px;
+      }
+    }
+  }
+
+}
