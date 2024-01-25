@@ -21,7 +21,7 @@ export default function AddTask({
 
 		if(isEmpty(task) == false) {
 			try {
-				set_task("")
+				document.getElementById("input").value = ""
 				const newValueAddedToDataBase = await addDoc(collection(db, "tasks" /* El segundo parametro será el nombre de la variable que guardará la base de datos */), {
 					name: task, 
 					completed: false    
@@ -39,10 +39,10 @@ export default function AddTask({
 			onSubmit={onSubmit}
 		>		
 			<input
+				id="input"
 				placeholder="Nueva tarea"
 				type="text" 
-				onChange={(e)=> set_task(e.target.value.trim())}
-				value={task}
+				onChange={(e)=> set_task(e.target.value.trim())}ç
 			/>
 
 			<Button type="submit">
